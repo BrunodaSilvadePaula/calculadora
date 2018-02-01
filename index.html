@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora BartDigital</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div id="div-calculator">
+            <div class="col-12">
+              <input id="value" type="text" name="value" class="form-control text-right" disabled>
+              <input id="value_sum" type="hidden" name="value_sum" class="form-control" value="null" disabled>
+              <input id="total_sum" type="hidden" name="total_sum" class="form-control" value="null" disabled>
+              <input id="action" type="hidden" name="action" class="form-control" value="null" disabled>
+              <input id="first_action" type="hidden" name="first_action" class="form-control" value="true" disabled>
+              <div class="col">
+                <p id="result" class="text-right"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button type="button" class="btn btn-success" data-action="sum">+</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-success" data-action="subtract">-</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-success" data-action="multiply">*</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-success" data-action="division">/</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="0">0</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="1">1</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="2">2</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="3">3</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="4">4</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="5">5</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="6">6</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="7">7</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="8">8</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num="9">9</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-warning" data-num=".">.</button>
+              </div>
+              <div class="col text-center">
+                <button type="button" class="btn btn-primary" data-equal="equal">=</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="col-12 text-center">
+                  <button type="button" class="btn btn-default clear" data-clear="ce">CE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
